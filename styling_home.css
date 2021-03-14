@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: silver;
+}
+
+#carouselExampleSlidesOnly{
+    position: relative;
+}
+
+#carouselExampleSlidesOnly > .carousel-inner > .carousel-item{
+    filter: blur(4px);
+}
+
+.sectiuneDetalii{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectiuneDetalii img{
+    width: auto;
+    height: 15vmin;
+    border-radius: 50%;
+    margin: 1vmin;
+    transition: 0.5s ease;
+}
+
+.sectiuneDetalii img:hover{
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);
+}
+
+.sectiuneDetalii p{
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2vmin;
+    transition: 0.5s ease;
+}
+
+.sectiuneDetalii p.nume{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 3vmin;
+}
+
+.sectiuneDetalii p.nume:hover{
+    color: gold;
+    cursor: pointer;
+}
+
+.sectiuneDetalii p:nth-last-child(2):hover, .sectiuneDetalii p:last-child:hover{
+    color: gold;
+    cursor: pointer;
+    text-shadow: 2px 2px 10px #B8C6DB;
+}
+
+.sectiuneMeniu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    margin: 1vmin 1vmin 0 0;
+}
+
+.sectiuneMeniu ul{
+    list-style-type: none;
+}
+
+.sectiuneMeniu ul li{
+    float: left;
+}
+
+.sectiuneMeniu ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2.5vmin;
+    text-decoration: none;
+    font-size: 2vmin;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.sectiuneMeniu ul li a:hover{
+    text-shadow: 2px 2px 10px #B8C6DB;
+    font-size: 3vmin;
+}
+
+.socialMedia{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.socialMedia ul{
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+}
+
+.socialMedia ul li{
+    display: block;
+    font-size: 3vmin;
+    height: 6vmin;
+    width: 6vmin;
+    background: grey;
+    line-height: 6vmin;
+    border-radius: 50%;
+    margin: 0 1.5vmin;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.socialMedia ul li a{
+    color: #171515;
+    transition: .5s ease;
+}
+
+.socialMedia ul li:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    filter: blur(.5px);
+}
+
+.socialMedia ul li:first-child:hover{
+    background-color: #3b5998;
+}
+
+.socialMedia ul li:nth-child(2):hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.socialMedia ul li:nth-last-child(2):hover{
+    background-color: #c4302b;
+}
+
+.socialMedia ul li:nth-last-child(1):hover{
+    background:linear-gradient(120deg, #00adee, #000000);
+}
+
+.socialMedia ul li:hover a{
+    color: white;
+}
+
+.zonaInformatii{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.zonaInformatii .chenarInformatii{
+    
+    background: linear-gradient(0deg, #F5F7FA, #B8C6DB);
+    border-radius: 2vmin;
+    display: flex;
+    padding: 1vmax;
+    margin: 5vmin 10vmin;
+    transition: 0.5s ease;
+}
+
+.zonaInformatii .chenarInformatii:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.zonaInformatii .chenarInformatii .sectiuneDespre{
+    flex: 1;
+    padding: 0 3vmin 0 0;
+}
+
+.zonaInformatii .chenarInformatii .sectiuneDespre .despre{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.zonaInformatii .chenarInformatii .sectiuneDespre p{
+    font-size: 2vmin;
+    font-family: 'Sansita Swashed', cursive;
+    text-indent: 2vmin;
+}
+
+.zonaInformatii .chenarInformatii .sectiuneDespre p span{
+    transition: 0.5s ease;
+}
+
+.zonaInformatii .chenarInformatii .sectiuneDespre p span:hover{
+    text-shadow: 2px 2px 10px #000;
+}
+
+.zonaInformatii .chenarInformatii .sectiuneDespre h3, .zonaInformatii .chenarInformatii .sectiuneInformatii h3{
+    font-family: 'Sansita Swashed', cursive;
+    font-style: italic;
+    font-size: 3vmin;
+    margin: 0 0 0.5vmin 0;
+}
+
+.zonaInformatii .chenarInformatii .sectiuneInformatii{
+    flex: 1;
+    padding: 0 0 0 3vmin;
+}
+
+.zonaInformatii .chenarInformatii .sectiuneInformatii .informatii{
+    display: flex;
+    flex-direction: column;
+}
+
+.zonaInformatii .chenarInformatii .sectiuneInformatii .informatii .informatie{
+    display: flex;
+}
+
+.zonaInformatii .chenarInformatii .sectiuneInformatii .informatii .informatie p:first-child{
+    font-size: 2vmin;
+    font-family: 'Caveat', cursive;
+    text-transform: capitalize;
+    padding: 0.5vmin 1vmin;
+    margin: 0;
+}
+
+.zonaInformatii .chenarInformatii .sectiuneInformatii .informatii .informatie p:last-child{
+    padding: 0.5vmin 1vmin;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 1.5vmin;
+    margin: 0;
+}
+
+.zonaInformatii .zonaCopyright{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.zonaInformatii .zonaCopyright h6{
+    font-size: 2vmin;
+    font-family: 'Architects Daughter', cursive;
+    margin: 1vmin;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px){
+    .zonaInformatii .chenarInformatii{
+        flex-direction: column;
+    }
+
+    .zonaInformatii .chenarInformatii .sectiuneDespre, .zonaInformatii .chenarInformatii .sectiuneInformatii{
+        padding: 0;
+    }
+
+    .zonaInformatii .chenarInformatii .sectiuneDespre p{
+        font-size: 2vmin;
+    }
+
+    .zonaInformatii .chenarInformatii .sectiuneInformatii .informatii .informatie p:first-child{
+        font-size: 2vmin;
+        margin: 0;
+    }
+    
+    .zonaInformatii .chenarInformatii .sectiuneInformatii .informatii .informatie p:last-child{
+        font-size: 1.5vmin;
+        margin: 0;
+    }
+}

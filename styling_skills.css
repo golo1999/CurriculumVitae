@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body::before{
+    content: "";
+    background: linear-gradient(-120deg, #3a1c71, #d76d77, #ffaf7b);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sectiuneMeniu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1vmin 1vmin 0 0;
+}
+
+.sectiuneMeniu ul{
+    list-style-type: none;
+}
+
+.sectiuneMeniu ul li{
+    float: left;
+}
+
+.sectiuneMeniu ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2.5vh;
+    text-decoration: none;
+    font-size: 2vh;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.sectiuneMeniu ul li a:hover{
+    text-shadow: 2px 2px 10px #B8C6DB;
+    font-size: 3vh;
+}
+
+.ecranPrincipal{
+    border: 1vh solid chocolate;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 2vh;
+    transform: translate(-50%, -50%);
+    background-color: gold;
+    transition: .5s ease;
+    animation: ecranPrincipalSlideShow 10s infinite;
+}
+
+@keyframes ecranPrincipalSlideShow{
+    25%{
+        background-color: orange;
+    }
+    75%{
+        background-color: gold;
+    }
+}
+
+.ecranPrincipal:hover{
+    box-shadow: 0vmin .7vmin .5vmin rgba(0, 0, 0, 0.5);
+}
+
+.ecranPrincipal h1{
+    font-family: 'Sansita Swashed', cursive;
+    color: black;
+    font-size: 4vh;
+    text-align: center;
+    margin: 2vh;
+    transition: .5s ease;
+}
+
+.ecranPrincipal h1:hover{
+    color: dimgray;
+    text-shadow: .2vmin .2vmin 1vmin #B8C6DB;
+}
+
+.ecranPrincipal .containerAptitudini{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.ecranPrincipal .containerAptitudini .coloana.coloanaNumeAptitudine{
+    margin: 1vh 0 1vh 1vw;
+}
+
+.ecranPrincipal .containerAptitudini .coloana.coloanaNumeAptitudine .randNumeAptitudine{
+    margin: 1vh 0;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine{
+    flex: 1;
+    margin: 1vh 1vw;
+}
+
+.ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine{
+    display: flex;
+    margin: 1vh 0;
+    height: 3vh;
+}
+
+.ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procent{
+    background-color: red;
+}
+
+.ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procent.html, .ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procent.jquery, .ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procent.java, .ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procent.cpp, .ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procent.sql{
+    flex: 7;
+}
+
+.ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procent.css, .ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procent.c{
+    flex: 6;
+}
+
+.ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procent.js, .ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procent.php, .ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procent.nodejs{
+    flex: 5;
+}
+
+.ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procentLowOpacity{
+    background-color: silver;
+    opacity: .9;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procentLowOpacity.html, .ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procentLowOpacity.jquery, .ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procentLowOpacity.java, .ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procentLowOpacity.cpp, .ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procentLowOpacity.sql{
+    flex: 3;
+}
+
+.ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procentLowOpacity.css, .ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procentLowOpacity.c{
+    flex: 4;
+}
+
+.ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procentLowOpacity.js, .ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procentLowOpacity.php, .ecranPrincipal .containerAptitudini .coloana.coloanaProcentajAptitudine .randProcentajAptitudine .procentLowOpacity.nodejs{
+    flex: 5;
+}
